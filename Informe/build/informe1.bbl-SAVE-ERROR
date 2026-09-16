@@ -1,0 +1,54 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{guia_tclab_2026}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=565447450a64e2af7894dda4254de942}{%
+           family={{Escuela de Ingeniería Electrónica}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Escuela de Ingeniería Electrónica}%
+      }
+      \list{organization}{1}{%
+        {Tecnológico de Costa Rica}%
+      }
+      \strng{namehash}{565447450a64e2af7894dda4254de942}
+      \strng{fullhash}{565447450a64e2af7894dda4254de942}
+      \strng{fullhashraw}{565447450a64e2af7894dda4254de942}
+      \strng{bibnamehash}{565447450a64e2af7894dda4254de942}
+      \strng{authorbibnamehash}{565447450a64e2af7894dda4254de942}
+      \strng{authornamehash}{565447450a64e2af7894dda4254de942}
+      \strng{authorfullhash}{565447450a64e2af7894dda4254de942}
+      \strng{authorfullhashraw}{565447450a64e2af7894dda4254de942}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Laboratorio de Control Automático}
+      \field{number}{EL5409}
+      \field{title}{Guía de Laboratorio 1: Caracterización, identificación y control de la planta {TCLab} mediante {Model-in-the-Loop}}
+      \field{year}{2026}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

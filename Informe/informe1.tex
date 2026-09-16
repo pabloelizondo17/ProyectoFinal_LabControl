@@ -1,0 +1,98 @@
+\documentclass[journal]{IEEEtran}
+
+\usepackage{circuitikz}   
+\usepackage{tikz}
+\usepackage[spanish, es-noshorthands]{babel}
+\usepackage{float}
+\usepackage{instructivo}
+\usepackage{tabularx}
+\usepackage{array}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\graphicspath{{./}{./fig/}}
+\usepackage[natbib=true,style=trad-unsrt,backend=biber]{biblatex}
+\addbibresource{literatura.bib}
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\usepackage{amsmath}
+\usetikzlibrary{shapes, arrows.meta, positioning, calc}
+ 
+% --- Estilos ---
+\tikzset{
+  block/.style={
+    draw, rectangle,
+    minimum width=3.2cm, minimum height=1.2cm,
+    align=center, font=\small
+  },
+  line/.style={draw, -{Latex[length=2.5mm, width=2mm]}},
+  siglabel/.style={font=\footnotesize, text=blue!65!black},
+  blklabel/.style={font=\footnotesize, right=0.15cm, text=black}
+}
+
+\begin{document}
+\setlength{\parindent}{4.2mm}
+\title{Controlador para convertidor buck-boost}
+
+\author{Matías~A.~Camacho,~\IEEEmembership{Estudiante,~TEC},
+        Juan~P.~Elizondo,~\IEEEmembership{Estudiante,~TEC},
+        Yuliana~M.~Salas,~\IEEEmembership{Estudiante,~TEC}
+        y~Daniel~E.~Salas,~\IEEEmembership{Estudiante,~TEC}
+}
+
+% The paper headers
+\markboth{Laboratorio de control automático, IIS2026}%
+{Laboratorio de control automático}
+
+
+% make the title area
+\maketitle
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introducción}
+
+\IEEEPARstart{E}{l} desarrollo
+
+
+\printbibliography
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Biografías de los autores}
+
+ 
+\begin{IEEEbiographynophoto}{Matías A. Camacho}
+        Estudiante del Instituto Tecnológico de Costa Rica (TEC) en la carrera de ingeniería electrónica.
+        
+        Correo: jeacamacho@estudiantec.cr
+\end{IEEEbiographynophoto}
+
+\begin{IEEEbiographynophoto}{Juan P. Elizondo}
+        Estudiante de Ingeniería Electrónica en el Tecnológico de Costa Rica (TEC).
+        Cuenta con preparación y/o experiencia en áreas como:
+        \begin{itemize}
+            \item Arquitectura básica de redes, CISCO CCNA V7 (ITN), (2021).
+            \item Fundamentos de ciberseguridad, CISCO Systems, (2022).
+            \item Programa de tutorías estudiantiles, Tecnológico de Costa Rica, (2024).
+            \item Diseño de circuitos digitales, TEC (2025).
+        \end{itemize}
+        
+        Correo: juelizondo@estudiantec.cr
+\end{IEEEbiographynophoto}
+
+\begin{IEEEbiographynophoto}{Yuliana M. Salas}
+        Estudiante del Instituto Tecnológico de Costa Rica (TEC) en la carrera de ingeniería electrónica.
+        
+        Correo: yulisalas0130@estudiantec.cr
+\end{IEEEbiographynophoto}
+
+\begin{IEEEbiographynophoto}{Daniel E. Salas}
+        Estudiante del Instituto Tecnológico de Costa Rica (TEC) en la carrera de ingeniería electrónica.
+        
+        Correo: desteban2201@estudiantec.cr
+\end{IEEEbiographynophoto}
+
+\vfill
+
+\end{document}

@@ -1,0 +1,269 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% File:    instructivo.sty basado en  mmsklausur.sty               %
+% Date     26/07/2019                                              %
+% Version: instructivo.sty                                         %
+% Autor:   J. Wickel, P. Alvarado, JM. Barboza                     %
+%          Format and page layout for "instructivos" at IE-TE      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{instructivo}
+
+\typeout{Estilo de exámen en IE-TEC, Stand 05.04.2005}
+
+\RequirePackage[spanish]{babel}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{ifthen}
+\RequirePackage{siunitx}                    % Units of the SI
+\RequirePackage{icomma}
+
+
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amstext}
+
+%\RequirePackage{ftcap}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
+\RequirePackage{booktabs}
+
+\RequirePackage{graphicx}
+\RequirePackage{version}
+%\RequirePackage[table]{xcolor}
+\RequirePackage{rotating}
+\RequirePackage{tabularx}
+\RequirePackage{mathrsfs}        % Calygraphic fonts for transforms
+\RequirePackage{paralist}
+\RequirePackage{trsym}           % Para simbolos de transformadas o---o
+\RequirePackage{calc}
+
+\RequirePackage{multicol}
+\RequirePackage[linktoc=all,hidelinks]{hyperref}
+
+\RequirePackage{setspace}        % Spacing between lines
+\RequirePackage{vmargin}
+
+\RequirePackage{ntheorem}
+
+
+\RequirePackage[pdftex,table]{xcolor}
+%\RequirePackage{ifpdf}
+\RequirePackage{helvet}         % use helvetica font
+%\RequirePackage{fancyhdr}
+\RequirePackage[
+                % showframe,
+                paper=letterpaper, 
+                left=60mm,
+                right=26mm,
+                top=40mm,
+                bottom=24mm,
+                footskip=20pt,
+                headheight=20mm,
+                headsep=10mm,
+                reversemp,
+                marginparwidth=33mm,
+                marginparsep=1mm
+                ]{geometry}
+
+\RequirePackage{tikz}
+
+
+% Set as default sans serif
+\renewcommand{\familydefault}{\sfdefault}
+
+% 
+% page layout
+% 
+\setpapersize{USletter}
+
+% left,top,right,bottom,headheight,headsep,footheight,footsep
+%
+\setmarginsrb{20mm}{9mm}{20mm}{7mm}{15pt}{15pt}{7mm}{10mm}
+
+
+\sisetup{output-decimal-marker = {,}}
+\DeclareSIQualifier\peak{p}
+\DeclareSIQualifier\ppeak{pp}
+
+
+\newcommand{\abcskip}{\smallskip}
+\newcommand{\abcsep}{\medskip}
+\newcommand{\exersep}{\medskip}
+\newlength{\abcwidth}
+
+\newcommand{\footer}{\hfill}
+\newcommand{\header}{\hfill}
+\newcommand{\extrafooter}{\hfill}
+\newcommand{\extraheader}{\hfill}
+
+\newcommand{\headerFont}{\textsf}
+\newcommand{\footerFont}{\small\textsf}
+
+
+\ProcessOptions
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\numberwithin{equation}{section}
+
+
+\AtBeginDocument{
+  \renewcommand{\figurename}{\small{Fig}} %Cambia la palabra "Figura" por "Fig."
+  \renewcommand{\tablename}{\small{Tabla}} %Cambia la palabra "Tabla" por "Fig."
+  \renewcommand{\thefigure}{\small{\thesection.\arabic{figure}}}
+  \renewcommand{\thetable}{\small{\thesection.\arabic{table}}}
+  \renewcommand{\theequation}{\thesection.\arabic{equation}}
+  \graphicspath{{./}{./fig/}}%
+}
+
+\setlength{\parindent}{0pt}
+
+%
+%  Comandos, abreviaciones y notación
+%
+
+\DeclareFontFamily{U}{wncy}{}
+\DeclareFontShape{U}{wncy}{m}{n}{<->wncyr10}{}
+\DeclareSymbolFont{mcy}{U}{wncy}{m}{n}
+\DeclareMathSymbol{\sha}{\mathord}{mcy}{"58} 
+
+
+%%%%%%%%%%%%%%%%%%
+% Math Symbols C %
+%%%%%%%%%%%%%%%%%%
+
+\DeclareSymbolFont{symbolsC}{U}{txsyc}{m}{n}
+\SetSymbolFont{symbolsC}{bold}{U}{txsyc}{bx}{n}
+\DeclareFontSubstitution{U}{txsyc}{m}{n}
+
+\def\re@DeclareMathSymbol#1#2#3#4{%
+    \let#1=\undefined
+    \DeclareMathSymbol{#1}{#2}{#3}{#4}}
+
+\renewcommand{\Re}{\ensuremath{\operatorname{Re}}}
+\renewcommand{\Im}{\ensuremath{\operatorname{Im}}}
+
+\newcommand{\real}[1]{\Re\left\{#1\right\}}
+\newcommand{\imag}[1]{\Im\left\{#1\right\}}
+
+
+\re@DeclareMathSymbol{\multimapinv}{\mathrel}{symbolsC}{18}
+\re@DeclareMathSymbol{\multimapboth}{\mathrel}{symbolsC}{19}
+\re@DeclareMathSymbol{\multimapdot}{\mathrel}{symbolsC}{20}
+\re@DeclareMathSymbol{\multimapdotinv}{\mathrel}{symbolsC}{21}
+\re@DeclareMathSymbol{\multimapdotboth}{\mathrel}{symbolsC}{22}
+\re@DeclareMathSymbol{\multimapdotbothA}{\mathrel}{symbolsC}{23}
+\re@DeclareMathSymbol{\multimapdotbothB}{\mathrel}{symbolsC}{24}
+\re@DeclareMathSymbol{\multimapbothvert}{\mathrel}{symbolsC}{149}
+\re@DeclareMathSymbol{\multimapdotbothvert}{\mathrel}{symbolsC}{150}
+\re@DeclareMathSymbol{\multimapdotbothBvert}{\mathrel}{symbolsC}{151}
+\re@DeclareMathSymbol{\multimapdotbothAvert}{\mathrel}{symbolsC}{152}
+
+
+\newcommand{\prt}[1]{\ensuremath{\mathcal{#1}}}         %% partitioning
+\newcommand{\img}[1]{\ensuremath{\mathcal{#1}}}         %% image as a set
+\newcommand{\reg}[1][R]{\ensuremath{\mathcal{#1}}}      %% region
+\newcommand{\pred}[1]{\ensuremath{\mathrm{#1}}}         %% predicate
+\newcommand{\operat}[2]{\mathcal{#1}\left\{#2\right\}}
+\newcommand{\transf}[1]{\mathscr{#1}}
+\newcommand{\fourier}[1]{\transf{F}\left\{#1\right\}}
+\newcommand{\ifourier}[1]{\transf{F}^{-1}\left\{#1\right\}}
+\newcommand{\laplace}[1]{\transf{L}\left\{#1\right\}}
+\newcommand{\ulaplace}[1]{\transf{L}_u\left\{#1\right\}}
+\newcommand{\blaplace}[1]{\transf{L}_b\left\{#1\right\}}
+\newcommand{\ilaplace}[1]{\transf{L}^{-1}\left\{#1\right\}}
+\newcommand{\ztrans}[1]{\transf{Z}\left\{#1\right\}}
+\newcommand{\iztrans}[1]{\transf{Z}^{-1}\left\{#1\right\}}
+\newcommand{\zutrans}[1]{\transf{Z}_u\left\{#1\right\}}
+\newcommand{\exceq}{\ensuremath{\overset{!}{=}}}
+
+\newcommand{\signum}{\operatorname{signum}}
+\newcommand{\vct}[1]{\ensuremath{\underline{\mathbf{#1}}}}
+\newcommand{\mat}[1]{\ensuremath{\mathbf{#1}}}
+\newcommand{\vctmu}{\vct{\boldsymbol{\mu}}}
+\newcommand{\vctzeta}{\vct{\boldsymbol{\zeta}}}
+\newcommand{\vctpi}{\vct{\boldsymbol{\pi}}}
+\newcommand{\vctvarphi}{\vct{\boldsymbol{\varphi}}}
+\newcommand{\raum}[1]{\ensuremath{\mathbb{#1}}}
+\newcommand{\matSigma}{\mat{\boldsymbol{\Sigma}}}
+\newcommand{\matLambda}{\mat{\boldsymbol{\Lambda}}}
+\newcommand{\matPsi}{\mat{\boldsymbol{\Psi}}}
+\newcommand{\matPhi}{\mat{\boldsymbol{\Phi}}}
+\newcommand{\row}[2]{\ensuremath{\mathbf{\underline{#1}_{#2(\cdot)}}}}
+\newcommand{\col}[2]{\ensuremath{\mathbf{\underline{#1}_{(\cdot) #2}}}}
+\newcommand{\seq}[1]{\ensuremath{#1}}
+\newcommand{\set}[1]{\ensuremath{\mathcal{#1}}}
+\newcommand{\gset}[1]{\ensuremath{#1}} %% set for greek symbols
+\newcommand{\front}[1]{\widehat{\set{#1}}}
+\newcommand{\setlambda}{\set{\boldsymbol{\lambda}}}
+\newcommand{\klass}[1]{\ensuremath{\mathpss{#1}}}
+\newcommand{\graph}[1]{\ensuremath{\mathsf{#1}}}
+\newcommand{\lab}[1]{\ensuremath{\mathpss{L}(#1)}}
+\newcommand{\myfrac}[2]{{\footnotesize #1/#2}}
+\newcommand{\ifthenspc}{\rule{3mm}{0mm}}
+\newcommand{\point}[1]{\ensuremath{\mathsf{#1}}}
+\newcommand{\estim}[1]{\ensuremath{\hat{#1}}}
+\newcommand{\numset}[1]{\ensuremath{\mathbb{#1}}}
+\newcommand{\tuple}[1]{\ensuremath{\left\langle#1\right\rangle}}
+\newcommand{\conj}[1]{\ensuremath{#1^{\ast}}}
+\newcommand{\base}[1]{\set{#1}}
+\newcommand{\zeron}[1]{\ensuremath{\underset{\uparrow}{#1}}}
+\newcommand{\sysT}{\ensuremath{\mathcal{T}}}
+\newcommand{\sys}[1]{\ensuremath{\sysT\left[#1\right]}}
+\newcommand{\sen}{\operatorname{sen}} % sinus in spanish (seno)
+\newcommand{\senh}{\operatorname{senh}} % sinus in spanish (seno)
+\newcommand{\rect}{\operatorname{rect}} % rectangular
+\newcommand{\tria}{\operatorname{tria}} % triangular
+\newcommand{\sa}{\operatorname{sa}} % sa
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\conv}{\ensuremath{\ast}}
+\newcommand{\cconv}{\ensuremath{\;\,\text{\footnotesize{N}}\!\!\!\!\!\!\bigcirc}}
+\newcommand{\roc}{\ensuremath{\operatorname{ROC}}}
+
+
+%% Natural, Integer and Real Numbers
+\newcommand{\setA}{\ensuremath{\mathbb{A}}}
+\newcommand{\setB}{\ensuremath{\mathrm{I\negthinspace B}}}
+\newcommand{\setC}{\ensuremath{\mathbb{C}}}
+\newcommand{\setD}{\ensuremath{\mathrm{I\negthinspace D}}}
+\newcommand{\setE}{\ensuremath{\mathrm{I\negthinspace E}}}
+\newcommand{\setF}{\ensuremath{\mathrm{I\negthinspace F}}}
+\newcommand{\setG}{\ensuremath{\mathbb{G}}}
+\newcommand{\setH}{\ensuremath{\mathrm{I\negthinspace H}}}
+\newcommand{\setI}{\ensuremath{\mathbb{I}}}
+\newcommand{\setJ}{\ensuremath{\mathbb{J}}}
+\newcommand{\setK}{\ensuremath{\mathrm{I\negthinspace K}}}
+\newcommand{\setL}{\ensuremath{\mathrm{I\negthinspace L}}}
+\newcommand{\setM}{\ensuremath{\mathrm{I\negthinspace M}}}
+\newcommand{\setN}{\ensuremath{\mathrm{I\negthinspace N}}}
+\newcommand{\setO}{\ensuremath{\mathbb{O}}}
+\newcommand{\setP}{\ensuremath{\mathrm{I\negthinspace P}}}
+\newcommand{\setQ}{\ensuremath{\mathbb{Q}}}
+\newcommand{\setR}{\ensuremath{\mathrm{I\negthinspace R}}}
+\newcommand{\setS}{\ensuremath{\mathbb{S}}}
+\newcommand{\setT}{\ensuremath{\mathbb{T}}}
+\newcommand{\setU}{\ensuremath{\mathbb{U}}}
+\newcommand{\setV}{\ensuremath{\mathbb{V}}}
+\newcommand{\setW}{\ensuremath{\mathbb{W}}}
+\newcommand{\setX}{\ensuremath{\mathbb{X}}}
+\newcommand{\setY}{\ensuremath{\mathbb{Y}}}
+\newcommand{\setZ}{\ensuremath{\mathbb{Z}}}
+
+%%
+% Multimap symbols
+%
+\newcommand{\ttoF}{\TransformHoriz}
+\newcommand{\Ftot}{\InversTransformHoriz}
+\newcommand{\ttoZ}{\ttoF}
+\newcommand{\Ztot}{\Ftot}
+\newcommand{\ttoZu}{\overset{z_u}{\ttoF}}
+\newcommand{\Zutot}{\overset{z_u}{\Ftot}}
+\newcommand{\vttoF}{\text{\begin{sideways}$\Ftot$\end{sideways}}}
+\newcommand{\vFtot}{\text{\begin{sideways}$\ttoF$\end{sideways}}}
+\newcommand{\vttoZ}{\vttoF}
+\newcommand{\vZtot}{\vFtot}
+\newcommand{\ttoDF}{\underset{N}{\ttoF}}
+\newcommand{\DFtot}{\underset{N}{\Ftot}}
+
+\newcommand{\thisis}[2]{\underset{#1}{\underbrace{#2}}}
+
