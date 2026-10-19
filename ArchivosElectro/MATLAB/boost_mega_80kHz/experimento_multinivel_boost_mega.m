@@ -16,7 +16,7 @@ function datos = experimento_multinivel_boost_mega(b,cfg)
 
 if nargin<2, cfg=struct; end
 %% CONFIGURACION: valores iniciales propuestos, no identificados experimentalmente.
-def.nivelesDuty_pct=[50 60 75 55 70 50];
+def.nivelesDuty_pct=[50 70 55 75 60 50];
 def.duraciones_s=[67 67 66 67 67 66]*250e-6; % Suma exactamente 100 ms
 def.Ts_s=250e-6;             % 4 kS/s; verificar intervalos medidos
 % 400 muestras por defecto; limite de memoria configurado: 800 muestras.
