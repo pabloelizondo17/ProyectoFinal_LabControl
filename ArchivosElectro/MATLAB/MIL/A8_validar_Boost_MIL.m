@@ -22,7 +22,7 @@ nombreReferencia = "Vref_log";
 % Si no deseas registrar duty, sustituye su nombre por "".
 casos = ["PI ideal", "Vo_log", "Duty_PI_log"];
 % Cuando tengas el LQR, agrega esta fila y registra sus dos senales:
-% casos(end+1,:) = ["LQR", "Vo_LQR_log", "Duty_LQR_log"];
+ casos(end+1,:) = ["LQR", "Vo_LQR_log", "Duty_LQR_log"];
 % Ambos casos deben usar la misma referencia y duracion para compararlos.
 % Si el PI tiene saturacion, cambia la etiqueta a "PI con saturacion".
 
