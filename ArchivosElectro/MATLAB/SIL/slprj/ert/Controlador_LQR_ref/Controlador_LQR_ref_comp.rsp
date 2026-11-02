@@ -1,0 +1,8 @@
+-I"C:/Users/Usuario/Desktop/Tec/semestre 12/control/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/SIL"
+-I"C:/Users/Usuario/Desktop/Tec/semestre 12/control/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/SIL/slprj/ert/Controlador_LQR_ref"
+-I"C:/Program Files/MATLAB/R2026a/extern/include"
+-I"C:/Program Files/MATLAB/R2026a/simulink/include"
+-I"C:/Program Files/MATLAB/R2026a/rtw/c/src"
+-I"C:/Program Files/MATLAB/R2026a/rtw/c/src/ext_mode/common"
+-I"C:/Program Files/MATLAB/R2026a/rtw/c/ert"
+-I"C:/Users/Usuario/Desktop/Tec/semestre 12/control/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/SIL/slprj/ert/_sharedutils"
