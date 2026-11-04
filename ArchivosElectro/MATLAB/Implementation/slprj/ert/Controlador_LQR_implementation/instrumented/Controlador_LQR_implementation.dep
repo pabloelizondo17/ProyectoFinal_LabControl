@@ -1,0 +1,23 @@
+Controlador_LQR_implementation.o: \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/Controlador_LQR_implementation/Controlador_LQR_implementation.c \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/Controlador_LQR_implementation/Controlador_LQR_implementation.h \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/_sharedutils/rtwtypes.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/simulink/include/rtw_continuous.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/simulink/include/rtw_solver.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/simulink/include/rtw_continuous.h \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/Controlador_LQR_implementation/Controlador_LQR_implementation_types.h \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/Controlador_LQR_implementation/Controlador_LQR_implementation_private.h
+
+/home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/Controlador_LQR_implementation/Controlador_LQR_implementation.h:
+
+/home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/_sharedutils/rtwtypes.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/simulink/include/rtw_continuous.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/simulink/include/rtw_solver.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/simulink/include/rtw_continuous.h:
+
+/home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/Controlador_LQR_implementation/Controlador_LQR_implementation_types.h:
+
+/home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/Controlador_LQR_implementation/Controlador_LQR_implementation_private.h:
