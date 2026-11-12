@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'Controlador_LQR_implementation'.
  *
- * Model version                  : 1.0
+ * Model version                  : 1.3
  * Simulink Coder version         : 26.1 (R2026a) 20-Nov-2025
- * C/C++ source code generated on : Wed Nov  4 10:18:13 2026
+ * C/C++ source code generated on : Thu Nov 12 10:38:38 2026
  */
 
 #ifndef RTWTYPES_H

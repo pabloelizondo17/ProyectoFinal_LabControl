@@ -38,5 +38,3 @@ UNOR4_LIB_VERSION = 1.2.0
 export UNOR4_LIB_VERSION
 UNOR4_GCC_VERSION = 7-2017q4
 export UNOR4_GCC_VERSION
-ARDUINO_PACKAGES_TOOLS_ROOT = /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino
-export ARDUINO_PACKAGES_TOOLS_ROOT

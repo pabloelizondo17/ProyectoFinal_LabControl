@@ -2,7 +2,7 @@
 ## Makefile generated for component 'Controlador_LQR_implementation'. 
 ## 
 ## Makefile     : Controlador_LQR_implementation.mk
-## Generated on : Wed Nov 04 10:18:21 2026
+## Generated on : Thu Nov 12 10:38:44 2026
 ## Final product: ./Controlador_LQR_implementation_rtwlib.a
 ## Product type : static library
 ## 
@@ -29,6 +29,8 @@ CLASSIC_INTERFACE         = 0
 TGT_FCN_LIB               = ISO_C
 MODEL_HAS_DYNAMICALLY_LOADED_SFCNS = 0
 RELATIVE_PATH_TO_ANCHOR   = ../../../..
+SLIB_PATH                 = /home/pablo_elizondo17/Documents/MATLAB/R2026a/ArduinoStaticLibrary/ArduinoMega2560/FasterRuns
+SSLIB_PATH                = /home/pablo_elizondo17/Documents/MATLAB/R2026a/ArduinoStaticLibrary/ArduinoMega2560/FasterRuns
 C_STANDARD_OPTS           = 
 CPP_STANDARD_OPTS         = 
 MODELLIB                  = Controlador_LQR_implementation_rtwlib.a
@@ -65,7 +67,7 @@ DOWNLOAD_ARGS    =  >tmp.trash 2>&1 -P$(ARDUINO_PORT) -V -q -q -q -q -F -C$(ARDU
 
 TOOLCHAIN_SRCS = 
 TOOLCHAIN_INCS = 
-TOOLCHAIN_LIBS = -lm
+TOOLCHAIN_LIBS = -lm -lcore
 
 FORMAT_FOR_ECHO_SH               = ""'$1'
 FORMAT_FOR_ECHO                  = $(FORMAT_FOR_ECHO_SH)
@@ -166,51 +168,46 @@ ECHO                = echo
 MV                  =
 RUN                 =
 
-#--------------------------------------
-# "Faster Runs" Build Configuration
-#--------------------------------------
+#----------------------------------------
+# "Faster Builds" Build Configuration
+#----------------------------------------
 
-ARFLAGS              = rcs
-ASFLAGS              = -MMD -MP -MF"$(@:%.o=%.dep)" -MT"$@"  \
-                       -Wall \
-                       -x assembler-with-cpp \
-                       $(ASFLAGS_ADDITIONAL) \
-                       $(DEFINES) \
-                       $(INCLUDES) \
-                       -c
-OBJCOPYFLAGS_BIN     = $(ELF2EEP_OPTIONS) $(PRODUCT) $(PRODUCT_BIN)
-CFLAGS               = -std=gnu11  \
-                       -c \
-                       -w \
-                       -ffunction-sections \
-                       -fdata-sections  \
-                       -MMD \
-                       -DARDUINO=10801  \
-                       -MMD -MP -MF"$(@:%.o=%.dep)" -MT"$@"  \
-                       -Os
-CPPFLAGS             = -std=gnu++11 -fpermissive -fno-exceptions -fno-threadsafe-statics  \
-                       -c \
-                       -w \
-                       -ffunction-sections \
-                       -fdata-sections  \
-                       -MMD \
-                       -DARDUINO=10801  \
-                       -MMD -MP -MF"$(@:%.o=%.dep)" -MT"$@"  \
-                       -Os
-CPP_LDFLAGS          =  -w -Os -Wl,--gc-sections,--relax
-CPP_SHAREDLIB_LDFLAGS  =
-DOWNLOAD_FLAGS       = $(DOWNLOAD_ARGS)$(PRODUCT_HEX):i
-EXECUTE_FLAGS        =
-OBJCOPYFLAGS_HEX     = -O ihex -R .eeprom $(PRODUCT) $(PRODUCT_HEX)
-LDFLAGS              =  -w -Os -Wl,--gc-sections,--relax
 MEX_CPPFLAGS         =
 MEX_CPPLDFLAGS       =
 MEX_CFLAGS           =
 MEX_LDFLAGS          =
-MAKE_FLAGS           = -f $(MAKEFILE)
-SHAREDLIB_LDFLAGS    =
 
 
+
+#---------------------------
+# Model-Specific Options
+#---------------------------
+
+ASFLAGS = -MMD -MP -MF"$(@:%.o=%.dep)" -MT"$@"  -Wall -x assembler-with-cpp $(ASFLAGS_ADDITIONAL) $(DEFINES) $(INCLUDES) -c
+
+CFLAGS = -std=gnu11  -c -w -ffunction-sections -fdata-sections  -MMD -DARDUINO=10801  -MMD -MP -MF"$(@:%.o=%.dep)" -MT"$@"  -Os -g
+
+LDFLAGS = -w -Os -Wl,--gc-sections,--relax -g
+
+SHAREDLIB_LDFLAGS = -g
+
+CPPFLAGS = -std=gnu++11 -fpermissive -fno-exceptions -fno-threadsafe-statics  -c -w -ffunction-sections -fdata-sections  -MMD -DARDUINO=10801  -MMD -MP -MF"$(@:%.o=%.dep)" -MT"$@"  -Os -g
+
+CPP_LDFLAGS = -w -Os -Wl,--gc-sections,--relax -g
+
+CPP_SHAREDLIB_LDFLAGS = -g
+
+ARFLAGS = rcs
+
+OBJCOPYFLAGS_BIN = $(ELF2EEP_OPTIONS) $(PRODUCT) $(PRODUCT_BIN)
+
+OBJCOPYFLAGS_HEX = -O ihex -R .eeprom $(PRODUCT) $(PRODUCT_HEX)
+
+DOWNLOAD_FLAGS = $(DOWNLOAD_ARGS)$(PRODUCT_HEX):i
+
+EXECUTE_FLAGS = 
+
+MAKE_FLAGS = -f $(MAKEFILE)
 
 ###########################################################################
 ## OUTPUT INFO
@@ -232,7 +229,7 @@ INCLUDES = $(INCLUDES_BUILDINFO)
 ## DEFINES
 ###########################################################################
 
-DEFINES_ = -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DMW_TIMERID=5 -DMW_PRESCALAR=8 -DMW_TIMERCOUNT=65036 -DMW_SCHEDULERCOUNTER=1 -DARDUINO_NUM_SERIAL_PORTS=4 -DARDUINO_SERIAL_RECEIVE_BUFFER_SIZE=64 -D_RTT_BAUDRATE_SERIAL0_=9600 -D_RTT_BAUDRATE_SERIAL1_=9600 -D_RTT_BAUDRATE_SERIAL2_=9600 -D_RTT_BAUDRATE_SERIAL3_=9600 -D_RTT_CONFIG_SERIAL0_=SERIAL_8N1 -D_RTT_CONFIG_SERIAL1_=SERIAL_8N1 -D_RTT_CONFIG_SERIAL2_=SERIAL_8N1 -D_RTT_CONFIG_SERIAL3_=SERIAL_8N1 -D_RTT_ANALOG_REF_=0 -DMW_NUM_PINS=70 -D_ONBOARD_EEPROM_SIZE_=4096
+DEFINES_ = -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DMW_TIMERID=5 -DMW_PRESCALAR=8 -DMW_TIMERCOUNT=65036 -DMW_SCHEDULERCOUNTER=1 -DARDUINO_NUM_SERIAL_PORTS=4 -DARDUINO_SERIAL_RECEIVE_BUFFER_SIZE=64 -D_RTT_BAUDRATE_SERIAL0_=9600 -D_RTT_BAUDRATE_SERIAL1_=9600 -D_RTT_BAUDRATE_SERIAL2_=9600 -D_RTT_BAUDRATE_SERIAL3_=9600 -D_RTT_CONFIG_SERIAL0_=SERIAL_8N1 -D_RTT_CONFIG_SERIAL1_=SERIAL_8N1 -D_RTT_CONFIG_SERIAL2_=SERIAL_8N1 -D_RTT_CONFIG_SERIAL3_=SERIAL_8N1 -D_RTT_ANALOG_REF_=0 -DMW_RTIO_SERIAL0 -DMW_NUM_PINS=70 -D_ONBOARD_EEPROM_SIZE_=4096
 DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTERMFCN=1 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0 -DMT=0
 DEFINES_CUSTOM = 
 DEFINES_OPTS = -DTID01EQ=0 -DPROFILING_DEFINE_UINT64_TIMER_TYPE
@@ -288,6 +285,24 @@ CFLAGS_BASIC = $(DEFINES) $(INCLUDES)
 
 CFLAGS += $(CFLAGS_SKIPFORSIL) $(CFLAGS_BASIC)
 
+#-----------
+# Linker
+#-----------
+
+LDFLAGS_ = -L"$(SLIB_PATH)"
+LDFLAGS_SKIPFORSIL = -mmcu=atmega2560 
+
+LDFLAGS += $(LDFLAGS_) $(LDFLAGS_SKIPFORSIL)
+
+#--------------------------
+# Shared Library Linker
+#--------------------------
+
+SHAREDLIB_LDFLAGS_ = -L"$(SLIB_PATH)"
+SHAREDLIB_LDFLAGS_SKIPFORSIL = -mmcu=atmega2560 
+
+SHAREDLIB_LDFLAGS += $(SHAREDLIB_LDFLAGS_) $(SHAREDLIB_LDFLAGS_SKIPFORSIL)
+
 #-----------------
 # C++ Compiler
 #-----------------
@@ -301,33 +316,19 @@ CPPFLAGS += $(CPPFLAGS_SKIPFORSIL) $(CPPFLAGS_BASIC)
 # C++ Linker
 #---------------
 
+CPP_LDFLAGS_ = -L"$(SLIB_PATH)"
 CPP_LDFLAGS_SKIPFORSIL = -mmcu=atmega2560 
 
-CPP_LDFLAGS += $(CPP_LDFLAGS_SKIPFORSIL)
+CPP_LDFLAGS += $(CPP_LDFLAGS_) $(CPP_LDFLAGS_SKIPFORSIL)
 
 #------------------------------
 # C++ Shared Library Linker
 #------------------------------
 
+CPP_SHAREDLIB_LDFLAGS_ = -L"$(SLIB_PATH)"
 CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL = -mmcu=atmega2560 
 
-CPP_SHAREDLIB_LDFLAGS += $(CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL)
-
-#-----------
-# Linker
-#-----------
-
-LDFLAGS_SKIPFORSIL = -mmcu=atmega2560 
-
-LDFLAGS += $(LDFLAGS_SKIPFORSIL)
-
-#--------------------------
-# Shared Library Linker
-#--------------------------
-
-SHAREDLIB_LDFLAGS_SKIPFORSIL = -mmcu=atmega2560 
-
-SHAREDLIB_LDFLAGS += $(SHAREDLIB_LDFLAGS_SKIPFORSIL)
+CPP_SHAREDLIB_LDFLAGS += $(CPP_SHAREDLIB_LDFLAGS_) $(CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL)
 
 ###########################################################################
 ## INLINED COMMANDS

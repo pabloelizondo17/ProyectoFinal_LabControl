@@ -1,0 +1,59 @@
+Boost_LQR_implementation_data.o: \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/Boost_LQR_implementation_ert_rtw/Boost_LQR_implementation_data.c \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/Boost_LQR_implementation_ert_rtw/Boost_LQR_implementation.h \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/_sharedutils/rtwtypes.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/simulink/include/rtw_extmode.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/simulink/include/sysran_types.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/simulink/include/rtw_continuous.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/simulink/include/rtw_solver.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/simulink/include/rtw_continuous.h \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/_sharedutils/rt_nonfinite.h \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/_sharedutils/rtwtypes.h \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/Boost_LQR_implementation_ert_rtw/Boost_LQR_implementation_types.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/toolbox/target/shared/svd/common/include/MW_SVD.h \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/Controlador_LQR_implementation/Controlador_LQR_implementation.h \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/Controlador_LQR_implementation/Controlador_LQR_implementation_types.h \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/Boost_LQR_implementation_ert_rtw/MW_target_hardware_resources.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/toolbox/target/supportpackages/arduinotarget/include/MW_ArduinoHWInit.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/toolbox/target/supportpackages/arduinotarget/scheduler/include/arduinoAVRScheduler.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/Arduino.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/binary.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/variants/mega/pins_arduino.h
+
+/home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/Boost_LQR_implementation_ert_rtw/Boost_LQR_implementation.h:
+
+/home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/_sharedutils/rtwtypes.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/simulink/include/rtw_extmode.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/simulink/include/sysran_types.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/simulink/include/rtw_continuous.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/simulink/include/rtw_solver.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/simulink/include/rtw_continuous.h:
+
+/home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/_sharedutils/rt_nonfinite.h:
+
+/home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/_sharedutils/rtwtypes.h:
+
+/home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/Boost_LQR_implementation_ert_rtw/Boost_LQR_implementation_types.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/toolbox/target/shared/svd/common/include/MW_SVD.h:
+
+/home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/Controlador_LQR_implementation/Controlador_LQR_implementation.h:
+
+/home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/Controlador_LQR_implementation/Controlador_LQR_implementation_types.h:
+
+/home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/Boost_LQR_implementation_ert_rtw/MW_target_hardware_resources.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/toolbox/target/supportpackages/arduinotarget/include/MW_ArduinoHWInit.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/toolbox/target/supportpackages/arduinotarget/scheduler/include/arduinoAVRScheduler.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/Arduino.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/binary.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/variants/mega/pins_arduino.h:

@@ -1,0 +1,56 @@
+rtiostream_serial_daemon.o: \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/toolbox/target/supportpackages/arduinotarget/src/rtiostream_serial_daemon.cpp \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/Arduino.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/binary.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/WCharacter.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/WString.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/HardwareSerial.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/Stream.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/Print.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/Printable.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/USBAPI.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/Arduino.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/variants/mega/pins_arduino.h \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/Controlador_LQR_implementation/MW_target_hardware_resources.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/toolbox/target/supportpackages/arduinotarget/include/MW_ArduinoHWInit.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/toolbox/target/supportpackages/arduinotarget/scheduler/include/arduinoAVRScheduler.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/toolbox/target/supportpackages/arduinobase/include/io_wrappers.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/toolbox/target/supportpackages/arduinobase/include/peripheralIncludes.h \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/_sharedutils/rtwtypes.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/rtiostream/src/rtiostream.h
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/Arduino.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/binary.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/WCharacter.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/WString.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/HardwareSerial.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/Stream.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/Print.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/Printable.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/USBAPI.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/Arduino.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/variants/mega/pins_arduino.h:
+
+/home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/Controlador_LQR_implementation/MW_target_hardware_resources.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/toolbox/target/supportpackages/arduinotarget/include/MW_ArduinoHWInit.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/toolbox/target/supportpackages/arduinotarget/scheduler/include/arduinoAVRScheduler.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/toolbox/target/supportpackages/arduinobase/include/io_wrappers.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/toolbox/target/supportpackages/arduinobase/include/peripheralIncludes.h:
+
+/home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/_sharedutils/rtwtypes.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/rtiostream/src/rtiostream.h:

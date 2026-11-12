@@ -1,0 +1,15 @@
+{
+    "GraphicalInterface":{
+        "ExternalFileReferences":[
+            {
+                "Path":"$bdroot\/PID Controller",
+                "Reference":"slpidlib\/PID Controller",
+                "SID":"4",
+                "Type":"LIBRARY_BLOCK"
+            }
+        ],
+        "PreCompExecutionDomainType":"Unset",
+        "SimulinkSubDomainType":"Simulink",
+        "SolverName":"FixedStepDiscrete"
+    }
+}

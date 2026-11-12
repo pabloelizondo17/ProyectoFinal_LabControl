@@ -1,0 +1,56 @@
+xcp.o: \
+ /home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/protocol/src/xcp.c \
+ /home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/common/xcp_common.h \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/_sharedutils/rtwtypes.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/platform/include/xcp_platform.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/toolbox/target/supportpackages/arduinotarget/include/xcp_platform_custom.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/Arduino.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/binary.h \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/variants/mega/pins_arduino.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/include/xcp.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/protocol/include/xcp_internal.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/transport/include/xcp_transport_internal.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/include/xcp_transport.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/include/xcp.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/platform/default/xcp_mem.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/protocol/src/xcp_cfg.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/protocol/src/xcp_types.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/protocol/src/xcp_standard.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/protocol/src/xcp_daq.h \
+ /home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/protocol/src/xcp_calibration.h
+
+/home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/common/xcp_common.h:
+
+/home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/_sharedutils/rtwtypes.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/platform/include/xcp_platform.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/toolbox/target/supportpackages/arduinotarget/include/xcp_platform_custom.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/Arduino.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/binary.h:
+
+/home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/3P.instrset/arduinoide.instrset/aCLI/data/packages/arduino/hardware/avr/1.8.3/variants/mega/pins_arduino.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/include/xcp.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/protocol/include/xcp_internal.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/transport/include/xcp_transport_internal.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/include/xcp_transport.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/include/xcp.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/platform/default/xcp_mem.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/protocol/src/xcp_cfg.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/protocol/src/xcp_types.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/protocol/src/xcp_standard.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/protocol/src/xcp_daq.h:
+
+/home/pablo_elizondo17/MATLAB/R2026a/toolbox/coder/xcp/src/target/server/protocol/src/xcp_calibration.h:

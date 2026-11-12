@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[0, -8, 1920, 1050]</P>
+  <P Name="Open">on</P>
+  <P Name="ZoomFactor">80</P>
+  <P Name="ReportName">simulink-default.rpt</P>
+  <P Name="SIDHighWatermark">39</P>
+  <Block BlockType="Constant" Name="Constant" SID="7">
+    <P Name="Position">[850, 197, 920, 223]</P>
+    <P Name="ZOrder">313</P>
+    <P Name="Value">1.87543726</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant1" SID="19">
+    <P Name="Position">[680, 157, 750, 183]</P>
+    <P Name="ZOrder">325</P>
+    <P Name="Value">50</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant2" SID="29">
+    <P Name="Position">[1075, 547, 1145, 573]</P>
+    <P Name="ZOrder">335</P>
+    <P Name="Value">1.87543726</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant3" SID="36">
+    <P Name="Position">[870, 457, 940, 483]</P>
+    <P Name="ZOrder">342</P>
+    <P Name="Value">50</P>
+  </Block>
+  <Block BlockType="DiscreteTransferFcn" Name="Discrete&#xA;Transfer Fcn" SID="14">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[755, 274, 905, 316]</P>
+    <P Name="ZOrder">320</P>
+    <P Name="CopyFcn">dspblkCoreblockFVToolHelper(gcbh,&apos;copy&apos;);</P>
+    <P Name="DeleteFcn">dspblkCoreblockFVToolHelper(gcbh,&apos;close&apos;);</P>
+    <P Name="LoadFcn">dspblkCoreblockFVToolHelper(gcbh,&apos;load&apos;);</P>
+    <P Name="ModelCloseFcn">dspblkCoreblockFVToolHelper(gcbh,&apos;close&apos;);</P>
+    <P Name="PreSaveFcn">dspblkCoreblockFVToolHelper(gcbh,&apos;presave&apos;);</P>
+    <P Name="PostSaveFcn">dspblkCoreblockFVToolHelper(gcbh,&apos;postsave&apos;);</P>
+    <P Name="CloseFcn">dspblkCoreblockFVToolHelper(gcbh,&apos;close&apos;);</P>
+    <P Name="InputPortMap">u0</P>
+    <P Name="Numerator">num_Gp_d</P>
+    <P Name="Denominator">den_Gp_d</P>
+  </Block>
+  <Block BlockType="DiscreteTransferFcn" Name="Discrete&#xA;Transfer Fcn1" SID="27">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[950, 599, 1100, 641]</P>
+    <P Name="ZOrder">333</P>
+    <P Name="CopyFcn">dspblkCoreblockFVToolHelper(gcbh,&apos;copy&apos;);</P>
+    <P Name="DeleteFcn">dspblkCoreblockFVToolHelper(gcbh,&apos;close&apos;);</P>
+    <P Name="LoadFcn">dspblkCoreblockFVToolHelper(gcbh,&apos;load&apos;);</P>
+    <P Name="ModelCloseFcn">dspblkCoreblockFVToolHelper(gcbh,&apos;close&apos;);</P>
+    <P Name="PreSaveFcn">dspblkCoreblockFVToolHelper(gcbh,&apos;presave&apos;);</P>
+    <P Name="PostSaveFcn">dspblkCoreblockFVToolHelper(gcbh,&apos;postsave&apos;);</P>
+    <P Name="CloseFcn">dspblkCoreblockFVToolHelper(gcbh,&apos;close&apos;);</P>
+    <P Name="InputPortMap">u0</P>
+    <P Name="Numerator">num_Gp_d</P>
+    <P Name="Denominator">den_Gp_d</P>
+  </Block>
+  <Block BlockType="DiscreteIntegrator" Name="Discrete-Time&#xA;Integrator" SID="22">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[670, 602, 705, 638]</P>
+    <P Name="ZOrder">328</P>
+    <P Name="InitialConditionSetting">Auto</P>
+    <P Name="SampleTime">Ts</P>
+    <P Name="ICPrevOutput">DiscIntNeverNeededParam</P>
+    <P Name="ICPrevScaledInput">DiscIntNeverNeededParam</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain" SID="2">
+    <P Name="Position">[520, 280, 550, 310]</P>
+    <P Name="ZOrder">2</P>
+    <P Name="Gain">0.2</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain1" SID="15">
+    <P Name="Position">[1010, 280, 1040, 310]</P>
+    <P Name="ZOrder">321</P>
+    <P Name="Gain">5</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain2" SID="23">
+    <P Name="Position">[755, 596, 815, 644]</P>
+    <P Name="ZOrder">329</P>
+    <P Name="Gain">-Ki_LQR</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain3" SID="26">
+    <P Name="Position">[755, 526, 815, 574]</P>
+    <P Name="ZOrder">332</P>
+    <P Name="Gain">-Ku_LQR</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain4" SID="31">
+    <P Name="Position">[900, 686, 960, 734]</P>
+    <P Name="ZOrder">337</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Gain">-Kx_LQR</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain5" SID="32">
+    <P Name="Position">[1220, 605, 1250, 635]</P>
+    <P Name="ZOrder">338</P>
+    <P Name="Gain">5</P>
+  </Block>
+  <Block BlockType="Mux" Name="Mux" SID="38">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[1230, 356, 1235, 394]</P>
+    <P Name="ZOrder">344</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Mux" Name="Mux1" SID="39">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[1300, 426, 1305, 464]</P>
+    <P Name="ZOrder">345</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Reference" Name="PID Controller" SID="4">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[670, 277, 710, 313]</P>
+    <P Name="ZOrder">310</P>
+    <P Name="LibrarySourceBlock">simulink/Continuous/PID Controller</P>
+    <P Name="LibraryVersion">12.0</P>
+    <P Name="SourceBlock">slpidlib/PID Controller</P>
+    <P Name="SourceType">PID 1dof</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Controller">PI</P>
+      <P Name="Form">Parallel</P>
+      <P Name="TimeDomain">Discrete-time</P>
+      <P Name="UseExternalTs">off</P>
+      <P Name="SampleTime">Ts</P>
+      <P Name="IntegratorMethod">Forward Euler</P>
+      <P Name="FilterMethod">Forward Euler</P>
+      <P Name="ControllerParametersSource">internal</P>
+      <P Name="P">Kp</P>
+      <P Name="I">Ki</P>
+      <P Name="UseKiTs">off</P>
+      <P Name="D">0</P>
+      <P Name="UseExternalDerivativeSource">off</P>
+      <P Name="N">100</P>
+      <P Name="UseFilter">on</P>
+      <P Name="TunerSelectOption">Transfer Function Based (PID Tuner App)</P>
+      <P Name="ZeroCross">on</P>
+      <P Name="InitialConditionSource">internal</P>
+      <P Name="InitialConditionForIntegrator">0</P>
+      <P Name="InitialConditionForFilter">0</P>
+      <P Name="DifferentiatorICPrevScaledInput">0</P>
+      <P Name="ExternalReset">none</P>
+      <P Name="IgnoreLimit">off</P>
+      <P Name="TrackingMode">off</P>
+      <P Name="Kt">1</P>
+      <P Name="LimitOutput">off</P>
+      <P Name="SatLimitsSource">internal</P>
+      <P Name="UpperSaturationLimit">inf</P>
+      <P Name="LowerSaturationLimit">-inf</P>
+      <P Name="LinearizeAsGain">on</P>
+      <P Name="AntiWindupMode">none</P>
+      <P Name="Kb">1</P>
+      <P Name="LimitIntegrator">off</P>
+      <P Name="UpperIntegratorSaturationLimit">inf</P>
+      <P Name="LowerIntegratorSaturationLimit">-inf</P>
+      <P Name="RndMeth">Floor</P>
+      <P Name="SaturateOnIntegerOverflow">off</P>
+      <P Name="LockScale">off</P>
+      <P Name="PGainOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="PProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="POutMin">[]</P>
+      <P Name="POutMax">[]</P>
+      <P Name="IGainOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="IProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="IOutMin">[]</P>
+      <P Name="IOutMax">[]</P>
+      <P Name="DGainOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DOutMin">[]</P>
+      <P Name="DOutMax">[]</P>
+      <P Name="NGainOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="NProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="NOutMin">[]</P>
+      <P Name="NOutMax">[]</P>
+      <P Name="SumOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumOutMin">[]</P>
+      <P Name="SumOutMax">[]</P>
+      <P Name="SaturationOutDataTypeStr">Inherit: Same as input</P>
+      <P Name="SaturationOutMin">[]</P>
+      <P Name="SaturationOutMax">[]</P>
+      <P Name="PParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="PParamMin">[]</P>
+      <P Name="PParamMax">[]</P>
+      <P Name="IParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="IParamMin">[]</P>
+      <P Name="IParamMax">[]</P>
+      <P Name="DParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DParamMin">[]</P>
+      <P Name="DParamMax">[]</P>
+      <P Name="NParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="NParamMin">[]</P>
+      <P Name="NParamMax">[]</P>
+      <P Name="KbParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="KbParamMin">[]</P>
+      <P Name="KbParamMax">[]</P>
+      <P Name="KtParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="KtParamMin">[]</P>
+      <P Name="KtParamMax">[]</P>
+      <P Name="KbOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="KbOutMin">[]</P>
+      <P Name="KbOutMax">[]</P>
+      <P Name="KtOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="KtOutMin">[]</P>
+      <P Name="KtOutMax">[]</P>
+      <P Name="IntegratorOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="IntegratorOutMin">[]</P>
+      <P Name="IntegratorOutMax">[]</P>
+      <P Name="FilterOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterOutMin">[]</P>
+      <P Name="FilterOutMax">[]</P>
+      <P Name="SumI1OutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI1OutMin">[]</P>
+      <P Name="SumI1OutMax">[]</P>
+      <P Name="SumI2OutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI2OutMin">[]</P>
+      <P Name="SumI2OutMax">[]</P>
+      <P Name="SumI3OutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI3OutMin">[]</P>
+      <P Name="SumI3OutMax">[]</P>
+      <P Name="SumI4OutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI4OutMin">[]</P>
+      <P Name="SumI4OutMax">[]</P>
+      <P Name="SumDOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumDOutMin">[]</P>
+      <P Name="SumDOutMax">[]</P>
+      <P Name="SumAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI1AccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI2AccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI3AccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI4AccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumDAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DifferentiatorOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DifferentiatorOutMin">[]</P>
+      <P Name="DifferentiatorOutMax">[]</P>
+      <P Name="FilterDiffNumProductOutputDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffDenProductOutputDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffNumAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffDenAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffOutCoefDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffOutCoefMin">[]</P>
+      <P Name="FilterDiffOutCoefMax">[]</P>
+      <P Name="ReciprocalOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="ReciprocalOutMin">[]</P>
+      <P Name="ReciprocalOutMax">[]</P>
+      <P Name="SumDenOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumDenOutMin">[]</P>
+      <P Name="SumDenOutMax">[]</P>
+      <P Name="SumNumOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumNumOutMin">[]</P>
+      <P Name="SumNumOutMax">[]</P>
+      <P Name="SumDenAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumNumAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DivideOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DivideOutMin">[]</P>
+      <P Name="DivideOutMax">[]</P>
+      <P Name="UdiffTsProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="UdiffTsProdOutMin">[]</P>
+      <P Name="UdiffTsProdOutMax">[]</P>
+      <P Name="NTsProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="NTsProdOutMin">[]</P>
+      <P Name="NTsProdOutMax">[]</P>
+      <P Name="UintegralTsProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="UintegralTsProdOutMin">[]</P>
+      <P Name="UintegralTsProdOutMax">[]</P>
+      <P Name="UngainTsProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="UngainTsProdOutMin">[]</P>
+      <P Name="UngainTsProdOutMax">[]</P>
+      <P Name="ClampingZeroOutDataTypeStr">Inherit: Inherit via back propagation</P>
+      <P Name="ClampingZeroOutMin">[]</P>
+      <P Name="ClampingZeroOutMax">[]</P>
+      <P Name="FilterDenConstantOutDataTypeStr">Inherit: Inherit via back propagation</P>
+      <P Name="FilterDenConstantOutMin">[]</P>
+      <P Name="FilterDenConstantOutMax">[]</P>
+      <P Name="PCopyOutDataTypeStr">Inherit: Inherit via back propagation</P>
+      <P Name="PCopyOutMin">[]</P>
+      <P Name="PCopyOutMax">[]</P>
+      <P Name="NCopyOutDataTypeStr">Inherit: Inherit via back propagation</P>
+      <P Name="NCopyOutMin">[]</P>
+      <P Name="NCopyOutMax">[]</P>
+      <P Name="IntegratorContinuousStateAttributes">&apos;&apos;</P>
+      <P Name="IntegratorStateMustResolveToSignalObject">off</P>
+      <P Name="IntegratorRTWStateStorageClass">Auto</P>
+      <P Name="FilterContinuousStateAttributes">&apos;&apos;</P>
+      <P Name="FilterStateMustResolveToSignalObject">off</P>
+      <P Name="FilterRTWStateStorageClass">Auto</P>
+      <P Name="ParallelPVariant">InternalParameters</P>
+      <P Name="IdealPVariant">Disabled</P>
+      <P Name="IVariant">InternalParameters</P>
+      <P Name="DVariant">Disabled</P>
+      <P Name="IntegratorVariant">Discrete</P>
+      <P Name="SatVariant">Disabled</P>
+      <P Name="AWVariant">Passthrough</P>
+      <P Name="PCopyVariant">Disabled</P>
+      <P Name="TRVariant">Disabled</P>
+      <P Name="FdbkBlocksVariant">Forward</P>
+      <P Name="IdealPFdbkVariant">Disabled</P>
+      <P Name="SatFdbkVariant">Disabled</P>
+      <P Name="DerivativeFilterVariant">Disabled</P>
+      <P Name="NVariant">Disabled</P>
+      <P Name="NCopyVariant">Disabled_SignalSpec</P>
+      <P Name="FilterICVariant">Disabled</P>
+      <P Name="IntegratorICVariant">InternalICs</P>
+      <P Name="ExternalResetVariant">Disabled</P>
+      <P Name="TRSumVariant">Passthrough</P>
+      <P Name="SumFdbkVariant">Disabled</P>
+      <P Name="SumVariant">Sum_PI</P>
+      <P Name="TsampFilterVariant">InternalTs</P>
+      <P Name="TsampNgainVariant">Passthrough</P>
+      <P Name="TsampIntegralVariant">Disabled_SignalSpec</P>
+      <P Name="ExternalSaturationOutDataTypeStr">Inherit: Same as second input</P>
+      <P Name="DerivativeSourceVariant">Disabled</P>
+      <P Name="InitialConditionSetting">Auto</P>
+      <P Name="PreIntVariant">InternalPreInt</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Scope" Name="Scope" SID="9">
+    <PortCounts in="2"/>
+    <P Name="Position">[1415, 366, 1445, 399]</P>
+    <P Name="ZOrder">315</P>
+    <P Name="GraphicalSettings">{&quot;Style&quot;:{&quot;BackgroundColor&quot;:[0.12941176470588237,0.12941176470588237,0.12941176470588237],&quot;AxesColor&quot;:[0.07058823529411765,0.07058823529411765,0.07058823529411765],&quot;LabelsColor&quot;:[0.8509803921568627,0.8509803921568627,0.8509803921568627],&quot;PreserveColors&quot;:false,&quot;Visible&quot;:[true,true,true,true],&quot;LineStyle&quot;:[&quot;-&quot;,&quot;-&quot;,&quot;-&quot;,&quot;-&quot;],&quot;LineWidth&quot;:[1.5,1.5,1.5,1.5],&quot;BarWidth&quot;:[0.9,0.9,0.9,0.9],&quot;LineColor&quot;:[&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;],&quot;LineFaceAlpha&quot;:[1,1,1,1],&quot;LineEdgeAlpha&quot;:[1,1,1,1],&quot;Marker&quot;:[&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;none&quot;],&quot;FontSize&quot;:8.5,&quot;LineTrueColor&quot;:[[1,0.9098039215686274,0.39215686274509803],[0.14901960784313725,0.5490196078431373,0.8666666666666667],[1,0.9098039215686274,0.39215686274509803],[0.14901960784313725,0.5490196078431373,0.8666666666666667]],&quot;ChannelNames&quot;:&quot;&quot;,&quot;DefaultLegendLabel&quot;:[&quot;Gain1&quot;,&quot;Step&quot;,&quot;Gain5&quot;,&quot;Step&quot;],&quot;PlotType&quot;:&quot;Auto&quot;,&quot;NumLinesForDisplays&quot;:[2,2],&quot;OffsetView&quot;:true,&quot;LineLabels&quot;:[&quot;Gain1&quot;,&quot;Step&quot;,&quot;Gain5&quot;,&quot;Step&quot;],&quot;MinimizeControls&quot;:false,&quot;LineCache&quot;:null},&quot;MeasurementChannel&quot;:0,&quot;AxesScalingProperties&quot;:{&quot;AxesScaling&quot;:&quot;Manual&quot;,&quot;ExpandOnly&quot;:true,&quot;AxesScalingNumUpdates&quot;:10,&quot;ScaleAxesLimitsAtStop&quot;:false,&quot;YAxisDataRange&quot;:80,&quot;AlignYAxis&quot;:&quot;Center&quot;,&quot;AutoScaleXAxisLimits&quot;:false,&quot;XAxisDataRange&quot;:100,&quot;AlignXAxis&quot;:&quot;Center&quot;},&quot;DisplayProperties&quot;:{&quot;DisplayLayoutDimensions&quot;:[2,1],&quot;DisplayPropertyDefaults&quot;:{&quot;MaxYLimMag&quot;:12.25,&quot;MaxYLimReal&quot;:12.25,&quot;MinYLimMag&quot;:9.75,&quot;MinYLimReal&quot;:9.75,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;YLabel&quot;:&quot;&quot;},&quot;DisplayContentCache&quot;:{&quot;Title&quot;:&quot;&quot;,&quot;LinePropertiesCache&quot;:{},&quot;UserDefinedChannelNames&quot;:{},&quot;PlotMagPhase&quot;:0},&quot;SerializedDisplays&quot;:[{&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;LinePropertiesCache&quot;:{},&quot;UserDefinedChannelNames&quot;:{},&quot;PlotMagPhase&quot;:0,&quot;MaxYLimMag&quot;:12.345869334708013,&quot;MaxYLimReal&quot;:12.345869334708013,&quot;MinYLimMag&quot;:9.04733262947689,&quot;MinYLimReal&quot;:9.04733262947689,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;YLabel&quot;:&quot;&quot;,&quot;NumLines&quot;:2,&quot;ShowContent&quot;:1,&quot;Placement&quot;:0},{&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;LinePropertiesCache&quot;:{},&quot;UserDefinedChannelNames&quot;:{},&quot;PlotMagPhase&quot;:0,&quot;MaxYLimMag&quot;:12.25,&quot;MaxYLimReal&quot;:12.25,&quot;MinYLimMag&quot;:9.75,&quot;MinYLimReal&quot;:9.75,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;YLabel&quot;:&quot;&quot;,&quot;NumLines&quot;:2,&quot;ShowContent&quot;:1,&quot;Placement&quot;:1}],&quot;ColorOrder&quot;:[&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;]}}</P>
+    <P Name="WindowPosition">[1.000000,31.000000,1920.000000,1027.000000,]</P>
+    <P Name="ScopeFrameLocation">window</P>
+    <P Name="WasSavedAsWebScope">on</P>
+    <P Name="Floating">off</P>
+    <P Name="MultipleDisplayCache">[{&quot;MaxYLimMag&quot;:12.345869334708013,&quot;MaxYLimReal&quot;:12.345869334708013,&quot;MinYLimMag&quot;:9.04733262947689,&quot;MinYLimReal&quot;:9.04733262947689,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;YLabel&quot;:&quot;&quot;},{&quot;MaxYLimMag&quot;:12.330723993867181,&quot;MaxYLimReal&quot;:12.330723993867181,&quot;MinYLimMag&quot;:9.04901544512587,&quot;MinYLimReal&quot;:9.04901544512587,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;YLabel&quot;:&quot;&quot;}]</P>
+    <P Name="NumInputPorts">2</P>
+    <P Name="LayoutDimensionsString">[2,1]</P>
+    <P Name="ActiveDisplayYMinimum">9.04733262947689</P>
+    <P Name="ActiveDisplayYMaximum">12.345869334708013</P>
+  </Block>
+  <Block BlockType="Scope" Name="Scope1" SID="12">
+    <PortCounts in="2"/>
+    <P Name="Position">[1010, 116, 1040, 149]</P>
+    <P Name="ZOrder">318</P>
+    <P Name="GraphicalSettings">{&quot;Style&quot;:{&quot;BackgroundColor&quot;:[0.12941176470588237,0.12941176470588237,0.12941176470588237],&quot;AxesColor&quot;:[0.07058823529411765,0.07058823529411765,0.07058823529411765],&quot;LabelsColor&quot;:[0.8509803921568627,0.8509803921568627,0.8509803921568627],&quot;PreserveColors&quot;:false,&quot;Visible&quot;:[true,true],&quot;LineStyle&quot;:[&quot;-&quot;,&quot;-&quot;],&quot;LineWidth&quot;:[1.5,1.5],&quot;BarWidth&quot;:[0.9,0.9],&quot;LineColor&quot;:[&quot;auto&quot;,&quot;auto&quot;],&quot;LineFaceAlpha&quot;:[1,1],&quot;LineEdgeAlpha&quot;:[1,1],&quot;Marker&quot;:[&quot;none&quot;,&quot;none&quot;],&quot;FontSize&quot;:8.5,&quot;LineTrueColor&quot;:[[1,0.9098039215686274,0.39215686274509803],[0.14901960784313725,0.5490196078431373,0.8666666666666667]],&quot;ChannelNames&quot;:&quot;&quot;,&quot;DefaultLegendLabel&quot;:[&quot;Sum1&quot;,&quot;Gain&quot;],&quot;PlotType&quot;:&quot;Auto&quot;,&quot;NumLinesForDisplays&quot;:[2],&quot;OffsetView&quot;:true,&quot;LineLabels&quot;:[&quot;Sum1&quot;,&quot;Gain&quot;],&quot;MinimizeControls&quot;:false,&quot;LineCache&quot;:null},&quot;MeasurementChannel&quot;:0,&quot;AxesScalingProperties&quot;:{&quot;AxesScaling&quot;:&quot;Manual&quot;,&quot;ExpandOnly&quot;:true,&quot;AxesScalingNumUpdates&quot;:10,&quot;ScaleAxesLimitsAtStop&quot;:false,&quot;YAxisDataRange&quot;:80,&quot;AlignYAxis&quot;:&quot;Center&quot;,&quot;AutoScaleXAxisLimits&quot;:false,&quot;XAxisDataRange&quot;:100,&quot;AlignXAxis&quot;:&quot;Center&quot;},&quot;DisplayProperties&quot;:{&quot;DisplayLayoutDimensions&quot;:[1,1],&quot;DisplayPropertyDefaults&quot;:{&quot;MaxYLimMag&quot;:11,&quot;MaxYLimReal&quot;:13.147311210402616,&quot;MinYLimMag&quot;:9,&quot;MinYLimReal&quot;:7.004263698566984,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;YLabel&quot;:&quot;&quot;},&quot;DisplayContentCache&quot;:{&quot;Title&quot;:&quot;&quot;,&quot;LinePropertiesCache&quot;:{},&quot;UserDefinedChannelNames&quot;:{},&quot;PlotMagPhase&quot;:0},&quot;SerializedDisplays&quot;:[{&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;LinePropertiesCache&quot;:{},&quot;UserDefinedChannelNames&quot;:{},&quot;PlotMagPhase&quot;:0,&quot;MaxYLimMag&quot;:11,&quot;MaxYLimReal&quot;:13.147311210402616,&quot;MinYLimMag&quot;:9,&quot;MinYLimReal&quot;:7.004263698566984,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;YLabel&quot;:&quot;&quot;,&quot;NumLines&quot;:2,&quot;ShowContent&quot;:1,&quot;Placement&quot;:0}],&quot;ColorOrder&quot;:[&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;]}}</P>
+    <P Name="WindowPosition">[649.000000,428.000000,560.000000,420.000000,]</P>
+    <P Name="ScopeFrameLocation">window</P>
+    <P Name="WasSavedAsWebScope">on</P>
+    <P Name="Floating">off</P>
+    <P Name="MultipleDisplayCache">[{&quot;MaxYLimMag&quot;:2.4691738669416026,&quot;MaxYLimReal&quot;:2.4691738669416026,&quot;MinYLimMag&quot;:1.8094665258953773,&quot;MinYLimReal&quot;:1.8094665258953773,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;YLabel&quot;:&quot;&quot;}]</P>
+    <P Name="NumInputPorts">2</P>
+    <P Name="ActiveDisplayYMinimum">1.8094665258953773</P>
+    <P Name="ActiveDisplayYMaximum">2.4691738669416026</P>
+    <P Name="DataLoggingVariableName">ScopeData1</P>
+  </Block>
+  <Block BlockType="Step" Name="Step" SID="1">
+    <P Name="Position">[420, 280, 450, 310]</P>
+    <P Name="ZOrder">1</P>
+    <P Name="Time">0.025</P>
+    <P Name="InitialValue">10</P>
+    <P Name="FinalValue">12</P>
+    <P Name="SampleTime">Ts</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum" SID="3">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[600, 285, 620, 305]</P>
+    <P Name="ZOrder">3</P>
+    <P Name="Inputs">|+-</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum1" SID="6">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[930, 285, 950, 305]</P>
+    <P Name="ZOrder">312</P>
+    <P Name="Inputs">++|</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum2" SID="18">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[770, 200, 790, 220]</P>
+    <P Name="ZOrder">324</P>
+    <P Name="Inputs">++|</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum3" SID="21">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[600, 610, 620, 630]</P>
+    <P Name="ZOrder">327</P>
+    <P Name="Inputs">|+-</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum4" SID="24">
+    <PortCounts in="3" out="1"/>
+    <P Name="Position">[855, 600, 895, 640]</P>
+    <P Name="ZOrder">330</P>
+    <P Name="Inputs">|+++|</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum5" SID="28">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[1155, 610, 1175, 630]</P>
+    <P Name="ZOrder">334</P>
+    <P Name="Inputs">++|</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum6" SID="35">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[965, 490, 985, 510]</P>
+    <P Name="ZOrder">341</P>
+    <P Name="Inputs">++|</P>
+  </Block>
+  <Block BlockType="ToWorkspace" Name="To Workspace" SID="16">
+    <PortCounts in="1"/>
+    <P Name="Position">[510, 170, 600, 200]</P>
+    <P Name="ZOrder">322</P>
+    <P Name="VariableName">Vref_log</P>
+    <P Name="MaxDataPoints">inf</P>
+    <P Name="SaveFormat">Timeseries</P>
+    <P Name="FixptAsFi">on</P>
+    <P Name="SampleTime">Ts</P>
+  </Block>
+  <Block BlockType="ToWorkspace" Name="To Workspace1" SID="17">
+    <PortCounts in="1"/>
+    <P Name="Position">[1115, 215, 1205, 245]</P>
+    <P Name="ZOrder">323</P>
+    <P Name="VariableName">Vo_log</P>
+    <P Name="MaxDataPoints">inf</P>
+    <P Name="SaveFormat">Timeseries</P>
+    <P Name="FixptAsFi">on</P>
+    <P Name="SampleTime">Ts</P>
+  </Block>
+  <Block BlockType="ToWorkspace" Name="To Workspace2" SID="20">
+    <PortCounts in="1"/>
+    <P Name="Position">[810, 145, 900, 175]</P>
+    <P Name="ZOrder">326</P>
+    <P Name="VariableName">Duty_PI_log</P>
+    <P Name="MaxDataPoints">inf</P>
+    <P Name="SaveFormat">Timeseries</P>
+    <P Name="FixptAsFi">on</P>
+    <P Name="SampleTime">Ts</P>
+  </Block>
+  <Block BlockType="ToWorkspace" Name="To Workspace3" SID="34">
+    <PortCounts in="1"/>
+    <P Name="Position">[1385, 605, 1475, 635]</P>
+    <P Name="ZOrder">340</P>
+    <P Name="VariableName">Vo_LQR_log</P>
+    <P Name="MaxDataPoints">inf</P>
+    <P Name="SaveFormat">Timeseries</P>
+    <P Name="FixptAsFi">on</P>
+    <P Name="SampleTime">Ts</P>
+  </Block>
+  <Block BlockType="ToWorkspace" Name="To Workspace4" SID="37">
+    <PortCounts in="1"/>
+    <P Name="Position">[1025, 495, 1115, 525]</P>
+    <P Name="ZOrder">343</P>
+    <P Name="VariableName">Duty_LQR_log</P>
+    <P Name="MaxDataPoints">inf</P>
+    <P Name="SaveFormat">Timeseries</P>
+    <P Name="FixptAsFi">on</P>
+    <P Name="SampleTime">Ts</P>
+  </Block>
+  <Block BlockType="UnitDelay" Name="Unit Delay" SID="25">
+    <P Name="Position">[670, 533, 705, 567]</P>
+    <P Name="ZOrder">331</P>
+    <P Name="SampleTime">Ts</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">3#out:1</P>
+    <P Name="Dst">4#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">2#out:1</P>
+    <P Name="Points">[16, 0]</P>
+    <Branch>
+      <P Name="ZOrder">64</P>
+      <P Name="Points">[0, 325]</P>
+      <P Name="Dst">21#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">43</P>
+      <P Name="Points">[0, -155]</P>
+      <P Name="Dst">12#in:2</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">42</P>
+      <P Name="Dst">3#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">1#out:1</P>
+    <P Name="Points">[34, 0]</P>
+    <Branch>
+      <P Name="ZOrder">95</P>
+      <P Name="Points">[0, 90; 600, 0]</P>
+      <Branch>
+        <P Name="ZOrder">97</P>
+        <P Name="Points">[0, 70]</P>
+        <P Name="Dst">39#in:2</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">96</P>
+        <P Name="Dst">38#in:2</P>
+      </Branch>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">44</P>
+      <P Name="Points">[0, -110]</P>
+      <P Name="Dst">16#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">39</P>
+      <P Name="Dst">2#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">7#out:1</P>
+    <P Name="Points">[15, 0]</P>
+    <P Name="Dst">6#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">6#out:1</P>
+    <P Name="Points">[20, 0]</P>
+    <Branch>
+      <P Name="ZOrder">41</P>
+      <P Name="Points">[0, -170]</P>
+      <P Name="Dst">12#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">30</P>
+      <P Name="Dst">15#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">29</P>
+      <P Name="Points">[0, 69; -365, 0]</P>
+      <P Name="Dst">3#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">26</P>
+    <P Name="Src">4#out:1</P>
+    <P Name="Points">[8, 0]</P>
+    <Branch>
+      <P Name="ZOrder">48</P>
+      <P Name="Points">[0, -85]</P>
+      <P Name="Dst">18#in:2</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">47</P>
+      <P Name="Dst">14#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">28</P>
+    <P Name="Src">14#out:1</P>
+    <P Name="Dst">6#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">38</P>
+    <P Name="Src">15#out:1</P>
+    <P Name="Points">[44, 0]</P>
+    <Branch>
+      <P Name="ZOrder">94</P>
+      <P Name="Points">[0, -65]</P>
+      <P Name="Dst">17#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">93</P>
+      <P Name="Points">[0, 70]</P>
+      <P Name="Dst">38#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">49</P>
+    <P Name="Src">19#out:1</P>
+    <P Name="Points">[25, 0]</P>
+    <P Name="Dst">18#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">50</P>
+    <P Name="Src">18#out:1</P>
+    <P Name="Dst">20#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">65</P>
+    <P Name="Src">21#out:1</P>
+    <P Name="Dst">22#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">66</P>
+    <P Name="Src">22#out:1</P>
+    <P Name="Dst">23#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">67</P>
+    <P Name="Src">23#out:1</P>
+    <P Name="Dst">24#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">68</P>
+    <P Name="Src">25#out:1</P>
+    <P Name="Dst">26#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">69</P>
+    <P Name="Src">24#out:1</P>
+    <P Name="Points">[21, 0]</P>
+    <Branch>
+      <P Name="ZOrder">71</P>
+      <P Name="Points">[0, -118; -1, 0]</P>
+      <Branch>
+        <P Name="ZOrder">86</P>
+        <P Name="Points">[0, -2]</P>
+        <P Name="Dst">35#in:2</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">85</P>
+        <P Name="Points">[-274, 0; 0, 48]</P>
+        <P Name="Dst">25#in:1</P>
+      </Branch>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">70</P>
+      <P Name="Dst">27#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">72</P>
+    <P Name="Src">26#out:1</P>
+    <P Name="Points">[31, 0]</P>
+    <P Name="Dst">24#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">73</P>
+    <P Name="Src">27#out:1</P>
+    <P Name="Points">[15, 0]</P>
+    <Branch>
+      <P Name="ZOrder">77</P>
+      <P Name="Points">[0, 90]</P>
+      <P Name="Dst">31#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">75</P>
+      <P Name="Dst">28#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">74</P>
+    <P Name="Src">29#out:1</P>
+    <P Name="Points">[15, 0]</P>
+    <P Name="Dst">28#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">78</P>
+    <P Name="Src">31#out:1</P>
+    <P Name="Points">[-44, 0]</P>
+    <P Name="Dst">24#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">79</P>
+    <P Name="Src">28#out:1</P>
+    <P Name="Points">[17, 0]</P>
+    <Branch>
+      <P Name="ZOrder">90</P>
+      <P Name="Points">[0, 149; -587, 0]</P>
+      <P Name="Dst">21#in:2</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">89</P>
+      <P Name="Dst">32#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">80</P>
+    <P Name="Src">32#out:1</P>
+    <P Name="Points">[30, 0]</P>
+    <Branch>
+      <P Name="ZOrder">99</P>
+      <P Name="Dst">39#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">98</P>
+      <P Name="Dst">34#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">87</P>
+    <P Name="Src">36#out:1</P>
+    <P Name="Points">[30, 0]</P>
+    <P Name="Dst">35#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">88</P>
+    <P Name="Src">35#out:1</P>
+    <P Name="Points">[15, 0; 0, 10]</P>
+    <P Name="Dst">37#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">91</P>
+    <P Name="Src">38#out:1</P>
+    <P Name="Dst">9#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">100</P>
+    <P Name="Src">39#out:1</P>
+    <P Name="Points">[50, 0; 0, -55]</P>
+    <P Name="Dst">9#in:2</P>
+  </Line>
+</System>

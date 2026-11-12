@@ -1,0 +1,5 @@
+ArduinoPinHandleMap.o: \
+ /home/pablo_elizondo17/Documents/MATLAB/SupportPackages/R2026a/toolbox/target/supportpackages/arduinobase/src/ArduinoPinHandleMap.cpp \
+ /home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/_sharedutils/rtwtypes.h
+
+/home/pablo_elizondo17/Desktop/Repositories/ProyectoFinal_LabControl/ArchivosElectro/MATLAB/Implementation/slprj/ert/_sharedutils/rtwtypes.h:
