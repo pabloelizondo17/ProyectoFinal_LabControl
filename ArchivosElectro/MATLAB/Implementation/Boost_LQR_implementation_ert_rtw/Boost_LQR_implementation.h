@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'Boost_LQR_implementation'.
  *
- * Model version                  : 1.11
+ * Model version                  : 1.16
  * Simulink Coder version         : 26.1 (R2026a) 20-Nov-2025
- * C/C++ source code generated on : Thu Nov 12 11:08:55 2026
+ * C/C++ source code generated on : Wed Nov 18 10:42:43 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -77,8 +77,11 @@
 
 /* Block signals (default storage) */
 typedef struct {
-  real_T Saturation;                   /* '<Root>/Saturation' */
-  real32_T Gain1;                      /* '<Root>/Gain1' */
+  real_T DUTY_GUI;                     /* '<Root>/Saturation' */
+  real_T Multiply1;                    /* '<Root>/Multiply1' */
+  real_T TmpSignalConversionAtTAQSigLogg[2];
+  /* '<Root>/TmpSignal ConversionAtTAQSigLogging_InsertedFor_Mux_at_outport_0Inport1' */
+  real32_T VA0_GUI;                    /* '<Root>/Gain1' */
 } B_Boost_LQR_implementation_T;
 
 /* Block states (default storage) for system '<Root>' */
@@ -86,7 +89,7 @@ typedef struct {
   codertarget_arduinobase_inter_T obj; /* '<Root>/Analog Input' */
   codertarget_arduinobase_int_l_T obj_b;/* '<Root>/PWM1' */
   struct {
-    void *LoggedData[2];
+    void *LoggedData;
   } Scope_PWORK;                       /* '<Root>/Scope' */
 
   MdlrefDW_Controlador_LQR_impl_T Model_InstanceData;/* '<Root>/Model' */
@@ -94,7 +97,7 @@ typedef struct {
 
 /* Parameters (default storage) */
 struct P_Boost_LQR_implementation_T_ {
-  real_T Referencia_Value;             /* Expression: 15
+  real_T Referencia_Value;             /* Expression: 10
                                         * Referenced by: '<Root>/Referencia'
                                         */
   real_T Multiply_Gain;                /* Expression: 0.2
@@ -111,6 +114,9 @@ struct P_Boost_LQR_implementation_T_ {
                                         */
   real_T Saturation_LowerSat;          /* Expression: 45
                                         * Referenced by: '<Root>/Saturation'
+                                        */
+  real_T Multiply1_Gain;               /* Expression: 5
+                                        * Referenced by: '<Root>/Multiply1'
                                         */
   real_T Gain_Gain;                    /* Expression: 255/100
                                         * Referenced by: '<Root>/Gain'

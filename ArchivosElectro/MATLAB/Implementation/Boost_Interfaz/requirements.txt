@@ -1,0 +1,2 @@
+matplotlib>=3.8,<4
+matlabengine==26.1.12

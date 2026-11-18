@@ -7,9 +7,9 @@
  *
  * Code generation for model "Boost_LQR_implementation".
  *
- * Model version              : 1.11
+ * Model version              : 1.16
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Thu Nov 12 11:08:55 2026
+ * C source code generated on : Wed Nov 18 10:42:43 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR

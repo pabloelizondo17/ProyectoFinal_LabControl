@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'Boost_LQR_implementation'.
  *
- * Model version                  : 1.11
+ * Model version                  : 1.16
  * Simulink Coder version         : 26.1 (R2026a) 20-Nov-2025
- * C/C++ source code generated on : Thu Nov 12 11:08:55 2026
+ * C/C++ source code generated on : Wed Nov 18 10:42:43 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -74,7 +74,7 @@ void Boost_LQR_implementation_step(void)
    *  DataTypeConversion: '<Root>/Data Type Conversion'
    *  MATLABSystem: '<Root>/Analog Input'
    * */
-  Boost_LQR_implementation_B.Gain1 = Boost_LQR_implementation_P.Gain1_Gain *
+  Boost_LQR_implementation_B.VA0_GUI = Boost_LQR_implementation_P.Gain1_Gain *
     (real32_T)b_varargout_1;
 
   /* DataTypeConversion: '<Root>/Data Type Conversion2' incorporates:
@@ -84,13 +84,13 @@ void Boost_LQR_implementation_step(void)
    */
   rtb_DataTypeConversion2 = (real32_T)(Boost_LQR_implementation_P.Multiply_Gain *
     Boost_LQR_implementation_P.Referencia_Value -
-    Boost_LQR_implementation_B.Gain1);
+    Boost_LQR_implementation_B.VA0_GUI);
 
   /* DataTypeConversion: '<Root>/Data Type Conversion3' incorporates:
    *  Constant: '<Root>/perturbacion'
    *  Sum: '<Root>/Sum1'
    */
-  rtb_DataTypeConversion3 = (real32_T)(Boost_LQR_implementation_B.Gain1 -
+  rtb_DataTypeConversion3 = (real32_T)(Boost_LQR_implementation_B.VA0_GUI -
     Boost_LQR_implementation_P.perturbacion_Value);
 
   /* ModelReference: '<Root>/Model' */
@@ -101,33 +101,46 @@ void Boost_LQR_implementation_step(void)
   /* Sum: '<Root>/Sum2' incorporates:
    *  Constant: '<Root>/DutyRef'
    */
-  Boost_LQR_implementation_B.Saturation = rtb_Model +
+  Boost_LQR_implementation_B.DUTY_GUI = rtb_Model +
     Boost_LQR_implementation_P.DutyRef_Value;
 
   /* Saturate: '<Root>/Saturation' */
-  if (Boost_LQR_implementation_B.Saturation >
+  if (Boost_LQR_implementation_B.DUTY_GUI >
       Boost_LQR_implementation_P.Saturation_UpperSat) {
     /* Sum: '<Root>/Sum2' incorporates:
      *  Saturate: '<Root>/Saturation'
      */
-    Boost_LQR_implementation_B.Saturation =
+    Boost_LQR_implementation_B.DUTY_GUI =
       Boost_LQR_implementation_P.Saturation_UpperSat;
-  } else if (Boost_LQR_implementation_B.Saturation <
+  } else if (Boost_LQR_implementation_B.DUTY_GUI <
              Boost_LQR_implementation_P.Saturation_LowerSat) {
     /* Sum: '<Root>/Sum2' incorporates:
      *  Saturate: '<Root>/Saturation'
      */
-    Boost_LQR_implementation_B.Saturation =
+    Boost_LQR_implementation_B.DUTY_GUI =
       Boost_LQR_implementation_P.Saturation_LowerSat;
   }
 
   /* End of Saturate: '<Root>/Saturation' */
 
+  /* Gain: '<Root>/Multiply1' incorporates:
+   *  DataTypeConversion: '<Root>/Data Type Conversion4'
+   */
+  Boost_LQR_implementation_B.Multiply1 =
+    Boost_LQR_implementation_P.Multiply1_Gain *
+    Boost_LQR_implementation_B.VA0_GUI;
+
+  /* SignalConversion generated from: '<Root>/Mux' */
+  Boost_LQR_implementation_B.TmpSignalConversionAtTAQSigLogg[0] =
+    Boost_LQR_implementation_B.Multiply1;
+  Boost_LQR_implementation_B.TmpSignalConversionAtTAQSigLogg[1] =
+    Boost_LQR_implementation_B.DUTY_GUI;
+
   /* DataTypeConversion: '<Root>/Data Type Conversion1' incorporates:
    *  Gain: '<Root>/Gain'
    */
   tmp = floor(Boost_LQR_implementation_P.Gain_Gain *
-              Boost_LQR_implementation_B.Saturation);
+              Boost_LQR_implementation_B.DUTY_GUI);
   if (rtIsNaN(tmp) || rtIsInf(tmp)) {
     tmp = 0.0;
   } else {
@@ -160,10 +173,10 @@ void Boost_LQR_implementation_initialize(void)
   rtmSetTFinal(Boost_LQR_implementation_M, -1);
 
   /* External mode info */
-  Boost_LQR_implementation_M->Sizes.checksums[0] = (3114208790U);
-  Boost_LQR_implementation_M->Sizes.checksums[1] = (1107379403U);
-  Boost_LQR_implementation_M->Sizes.checksums[2] = (468574362U);
-  Boost_LQR_implementation_M->Sizes.checksums[3] = (3746235956U);
+  Boost_LQR_implementation_M->Sizes.checksums[0] = (328459943U);
+  Boost_LQR_implementation_M->Sizes.checksums[1] = (892147389U);
+  Boost_LQR_implementation_M->Sizes.checksums[2] = (421765841U);
+  Boost_LQR_implementation_M->Sizes.checksums[3] = (781206763U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
@@ -222,7 +235,6 @@ void Boost_LQR_implementation_terminate(void)
   }
 
   /* End of Terminate for MATLABSystem: '<Root>/Analog Input' */
-
   /* Terminate for MATLABSystem: '<Root>/PWM1' */
   if (!Boost_LQR_implementation_DW.obj_b.matlabCodegenIsDeleted) {
     Boost_LQR_implementation_DW.obj_b.matlabCodegenIsDeleted = true;

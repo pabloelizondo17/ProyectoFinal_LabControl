@@ -1,0 +1,10 @@
+{
+  "session": "BoostGUI",
+  "model": "Boost_LQR_implementation",
+  "reference_block": "Boost_LQR_implementation/Referencia",
+  "vmin": 10.0,
+  "vmax": 20.0,
+  "duty_scale_to_percent": 1.0,
+  "poll_seconds": 0.5,
+  "plot_seconds": 30.0
+}

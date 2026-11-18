@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'Boost_LQR_implementation'.
  *
- * Model version                  : 1.11
+ * Model version                  : 1.16
  * Simulink Coder version         : 26.1 (R2026a) 20-Nov-2025
- * C/C++ source code generated on : Thu Nov 12 11:08:55 2026
+ * C/C++ source code generated on : Wed Nov 18 10:42:43 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -32,10 +32,10 @@ boolean_T rtP_AW_activo = true;        /* Variable: AW_activo
 
 /* Block parameters (default storage) */
 P_Boost_LQR_implementation_T Boost_LQR_implementation_P = {
-  /* Expression: 15
+  /* Expression: 10
    * Referenced by: '<Root>/Referencia'
    */
-  15.0,
+  10.0,
 
   /* Expression: 0.2
    * Referenced by: '<Root>/Multiply'
@@ -61,6 +61,11 @@ P_Boost_LQR_implementation_T Boost_LQR_implementation_P = {
    * Referenced by: '<Root>/Saturation'
    */
   45.0,
+
+  /* Expression: 5
+   * Referenced by: '<Root>/Multiply1'
+   */
+  5.0,
 
   /* Expression: 255/100
    * Referenced by: '<Root>/Gain'

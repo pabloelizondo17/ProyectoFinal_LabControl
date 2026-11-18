@@ -2,7 +2,7 @@
 ## Makefile generated for component 'Controlador_LQR_implementation'. 
 ## 
 ## Makefile     : Controlador_LQR_implementation.mk
-## Generated on : Thu Nov 12 10:46:23 2026
+## Generated on : Wed Nov 18 10:21:45 2026
 ## Final product: ./Controlador_LQR_implementation_rtwlib.a
 ## Product type : static library
 ## 
@@ -264,7 +264,7 @@ PREBUILT_OBJS =
 ## LIBRARIES
 ###########################################################################
 
-LIBS = $(SSLIB_PATH)/MW_RebuildSrc_Core.o
+LIBS = $(START_DIR)/slprj/ert/_sharedutils/rtwshared.a $(SSLIB_PATH)/MW_RebuildSrc_Core.o
 
 ###########################################################################
 ## SYSTEM LIBRARIES
